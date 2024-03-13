@@ -16,7 +16,7 @@ def set_up(user_overrides: dict):
 
     starting_procedure_steps = []
     starting_procedure_steps.append(ManualGcode(
-        text='; Time to print!!!!!\n; GCode created with FullControl - tell us what you\'re printing!\n; info@fullcontrol.xyz or tag FullControlXYZ on Twitter/Instagram/LinkedIn/Reddit/TikTok \n'))
+        text='; Time to print!!!!!\n; GCode created by our team - tell us what you\'re printing!\n; @iiti.ac.in or tag IIT indore on Twitter/Instagram/LinkedIn/Reddit/TikTok \n'))
     starting_procedure_steps.append(Buildplate(temp=initialization_data["bed_temp"], wait=False))
     starting_procedure_steps.append(Hotend(temp=initialization_data["nozzle_temp"], wait=False, tool=tool))
     starting_procedure_steps.append(Hotend(temp=initialization_data["nozzle_temp"], wait=True, tool=tool))
