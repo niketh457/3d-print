@@ -1,0 +1,24 @@
+; Time to print!!!!!
+; GCode created by our team - tell us what you're printing!
+; @iiti.ac.in or tag IIT indore on Twitter/Instagram/LinkedIn/Reddit/TikTok
+M83 ; relative extrusion
+G0 F8000 X-0.0 Y0.0 Znan
+G1 F1000 Znan Enan
+G1 Z0.0 Enan
+G1 Y2.02 Enan
+G1 Y0.0 Enan
+G1 Y2048.0 Enan
+G1 Y0.0 Enan
+G1 X2.36846e+21 Y9.25602e+18 Enan
+G1 X1.01554e+31 Y0.0 Enan
+G1 Xnan Enan
+G1 Xnan Ynan Enan
+G1 X0.0 Y0.0 Z5.92295e+20 Enan
+G1 Y3.96286e+28 Z3.88013e+25 Enan
+G1 Ynan Znan Enan
+G1 Y0.0 Z0.0 Enan
+G1 X2.0 Enan
+G1 X4.41657e+21 Y1.10415e+21 Enan
+G1 X0.0 Y1.01554e+31 Z6.21161e+26 Enan
+G1 X4.07072e+31 Y9.74016e+26 Z1.09475e+27 Enan
+G1 X5.92295e+20 Y3.79011e+22 Z4.06874e+31 Enan
