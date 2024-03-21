@@ -45,7 +45,7 @@ for i, file in enumerate(os.listdir(stl_files_directory)):
         for point in points: 
             steps.append(fc.Point(x=point[0],y=point[1],z=point[2]))
         gcode = fc.transform(steps,'gcode')
-        with open(f'./gcode_files/gcode_{file}.txt','w') as f:
+        with open(f'./gcode_files/gcode_{file.split(".")[0]}.txt','w') as f:
             f.write(gcode)
 
 
