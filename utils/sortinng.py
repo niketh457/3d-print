@@ -9,3 +9,15 @@ def sort_vertices(vertices):
       A new list of vertices sorted by their z-coordinate in ascending order.
   """
   return sorted(vertices, key=lambda vertex: vertex[2])
+
+def sort_by_angle(vertices):
+    """
+    Sorts a list of PolarPoint objects based on their angle attribute.
+    
+    Args:
+        vertices: A list of PolarPoint objects with angle attribute.
+    
+    Returns:
+        A new list of PolarPoint objects sorted by their angle in ascending order.
+    """
+    return sorted(vertices, key=lambda vertex: vertex.angle)
