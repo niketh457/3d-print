@@ -316,7 +316,7 @@ class FlowTubeMesh(TubeMesh):
         path_directions = np.empty_like(self._path_points)
         path_directions[:-1] = self._path_points[1:] - self._path_points[:-1]
         # Set the last point to have the same direction as its segment
-        path_directions[-1] = path_directions[-2]
+        # path_directions[-1] = path_directions[-2]
         # Normalise directions to avoid tangents being scaled by segment lengths
         path_directions /= np.linalg.norm(path_directions, axis=1, keepdims=True)
         # NOTE: it may be possible to do this step as an insert lower down

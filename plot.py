@@ -26,7 +26,7 @@ points = vertices.get_vertices("stl_file/object_0.stl")
 # Example usage
 # vertices = [[1, 2, 3], [4, 5, 1], [7, 8, 2]]
 # vertices = np.array(vertices)
-# vertices = [[0,0,3],[0,1,3],[1,0,3],[1,1,3],[0,0,4],[0,1,4],[1,0,4],[1,1,4],[0,0,5],[0,1,5],[1,0,5],[1,1,5]]
+# points = [[0,0,4],[0,1,4],[1,0,4],[1,1,4],[0,0,5],[0,1,5],[1,0,5],[1,1,5]]
 vertices = sortinng.sort_vertices(points)
 #print(np.array(vertices))
 # #print(vertices)
@@ -89,7 +89,7 @@ while i<length:
                 if moveto==0:
                     steps.extend(fc.travel_to(fc.polar_to_point(fc.Point(x=origin[0],y=origin[1],z=origin[2]),polar_point.radius,polar_point.angle)))
                 steps.append(fc.polar_to_point(fc.Point(x=origin[0],y=origin[1],z=origin[2]),polar_point.radius,polar_point.angle))
-
+            steps.append(fc.polar_to_point(fc.Point(x=origin[0],y=origin[1],z=origin[2]),polar_vertices[0].radius,polar_vertices[0].angle))
             for k,p in enumerate(addplane):
                 for point in p:
                     vertices.insert(i,point)
@@ -110,7 +110,8 @@ while i<length:
                     if moveto==0:
                         steps.extend(fc.travel_to(fc.polar_to_point(fc.Point(x=origin[0],y=origin[1],z=origin[2]),polar_point.radius,polar_point.angle)))
                     steps.append(fc.polar_to_point(fc.Point(x=origin[0],y=origin[1],z=origin[2]),polar_point.radius,polar_point.angle))
-
+                steps.append(fc.polar_to_point(fc.Point(x=origin[0],y=origin[1],z=origin[2]),polar_vertices[0].radius,polar_vertices[0].angle))
+                
                     
             # for p in addplane:
             #     for point in p:
@@ -144,7 +145,9 @@ while i<length:
 
 
 
-gcode = fc.transform(steps,'gcode')
-# #print(gcode)
-with open('cube.txt','w') as f:
-    f.write(gcode)
+# gcode = fc.transform(steps,'gcode')
+# # #print(gcode)
+# with open('cube.txt','w') as f:
+#     f.write(gcode)
+print(vertices)
+fc.transform(steps,'plot')
