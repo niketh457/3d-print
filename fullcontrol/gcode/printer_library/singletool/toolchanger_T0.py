@@ -14,7 +14,7 @@ def set_up(user_overrides: dict):
 
     starting_procedure_steps = []
     starting_procedure_steps.append(ManualGcode(
-        text='; Time to print!!!!!\n; GCode created by our team - tell us what you\'re printing!\n; @iiti.ac.in or tag IIT indore on Twitter/Instagram/LinkedIn/Reddit/TikTok'))
+        text='; Time to print!!!!!\n; GCode created by our team - tell us what you\'re printing!\n; @iiti.ac.in or tag IIT indore on Twitter/Instagram/LinkedIn/Reddit/TikTok \nG21'))
     starting_procedure_steps.append(PrinterCommand(id='home'))
     starting_procedure_steps.append(ManualGcode(text='T0'))
     starting_procedure_steps.append(Buildplate(temp=initialization_data["bed_temp"], wait=False))
