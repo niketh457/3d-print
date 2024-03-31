@@ -14,7 +14,7 @@ def set_up(user_overrides: dict):
 
     starting_procedure_steps = []
     starting_procedure_steps.append(ManualGcode(
-        text='; Time to print!!!!!\n; GCode created by our team - tell us what you\'re printing!\n; @iiti.ac.in or tag IIT indore on Twitter/Instagram/LinkedIn/Reddit/TikTok'))
+        text='; Time to print!!!!!\n; GCode created by our team - tell us what you\'re printing!\n; @iiti.ac.in or tag IIT indore on Twitter/Instagram/LinkedIn/Reddit/TikTok \nG21'))
     if 'relative_e' in user_overrides.keys():
         starting_procedure_steps.append(Extruder(relative_gcode=initialization_data["relative_e"]))
     if 'bed_temp' in user_overrides.keys():
