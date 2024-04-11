@@ -1,0 +1,27 @@
+.section-examples {
+    position: relative;
+    overflow: hidden;
+    height: 70vh;
+  }
+  
+  .section-examples::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(to right, #271107, #000000); /* Adjust gradient colors as needed */
+
+    animation: moveGradient 5s linear infinite;
+  }
+  
+  @keyframes moveGradient {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  

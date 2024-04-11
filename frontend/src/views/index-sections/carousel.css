@@ -1,0 +1,57 @@
+/* Add this CSS to your existing styles or create a new CSS file
+
+.carousel {
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .carousel-control-prev {
+    left: -20px;
+  }
+  
+  .carousel-control-next {
+    right: -20px;
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .carousel-caption h5 {
+    color: #fff;
+    font-size: 18px;
+  }
+   */
+
+   .carousel .carousel-inner {
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 0.1875rem;
+    height: 40rem;
+}
+.cll{
+    height: 40rem;
+    width: 100%;
+}
