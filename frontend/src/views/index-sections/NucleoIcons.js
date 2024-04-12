@@ -44,7 +44,7 @@ function NucleoIcons() {
               className="btn-round mr-1 btn-lg btn-success"
               style={{ width: "35rem" }}
               color="success"
-              href="/nucleo-icons"
+              href="/fileUpload"
               size="lg"
               target="_blank"
             >

@@ -22,7 +22,7 @@ import {
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import TransparentFooter from "components/Footers/TransparentFooter.js";
 
-function LoginPage() {
+function SignUpPage() {
   const navigate = useNavigate();
   const [firstFocus, setFirstFocus] = React.useState(false);
   const [lastFocus, setLastFocus] = React.useState(false);
@@ -43,15 +43,12 @@ function LoginPage() {
     }))
   }
   const handleSubmit = async(e) => {
-    console.log("Submit")
     e.preventDefault()
     try{
-      console.log(inputs)
-      console.log("Hellp")
-     const {data} = await axios.post("http://localhost:8000/gcode/login",{username:inputs.username,email:inputs.email,password:inputs.password});
+     const {data} = await axios.post("http://localhost:8000/gcode/signup",{username:inputs.username,email:inputs.email,password:inputs.password});
      console.log(data);
      if(data){
-       navigate("/index")
+       navigate("/login-page")
      }
     }catch(error){
        console.log(error)
@@ -176,15 +173,14 @@ function LoginPage() {
                       <h6>
                         <a
                           className="link"
-                          href="#pablo"
+                          href="/login-page"
                           onClick={(e) => e.preventDefault()}
                         >
-                          Create Account
+                          login
                         </a>
                       </h6>
                     </div>
                     <div className="pull-right">
-
                     </div>
                   </CardFooter>
                 </form>
@@ -198,4 +194,4 @@ function LoginPage() {
   );
 }
 
-export default LoginPage;
+export default SignUpPage;

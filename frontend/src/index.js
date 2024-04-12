@@ -31,6 +31,8 @@ import LoginPage from "views/examples/LoginPage.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import FileUpload from "views/inputSTLPage/stlinputpage";
+import SignUpPage from "views/examples/SignupPage";
+import InputPage from "views/examples/InputPage";
 // import Aboutus from "pages/aboutus/aboutus";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -43,7 +45,9 @@ root.render(
       <Route path="/landing-page" element={<LandingPage />} />
       <Route path="/profile-page" element={<ProfilePage />} />
       <Route path="/login-page" element={<LoginPage />} />
+      <Route path="/signup-page" element={<SignUpPage/>}/>
       <Route path="/stlINPUT" element={< FileUpload/>} />
+      <Route path="/fileUpload" element={<InputPage/>}/>
       {/* <Route path="/aboutus" element={< Aboutus/>} /> */}
 
 
