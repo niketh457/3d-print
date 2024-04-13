@@ -1,0 +1,7 @@
+trimesh
+numpy
+django
+django-cors-headers
+scipy
+djangorestframework
+django-rest-authtoken
