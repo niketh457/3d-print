@@ -109,91 +109,53 @@ function UploadFile() {
 return (
     <>
     <Navbars/>
-    <div className="containerxx" style={{background:"#e9deffb0",padding:"4rem",borderRadius:"40px"}}>
-        <h1>UPLOAD GCODE FILE HERE TO GET STL FILE</h1>
-    <div className="col">
-        <div className="col">
-            <h2 className="alert" style={{background:"#7269695c",padding:"1rem",borderRadius:"40px",textAlign:"center"}}>File Upload Section</h2>
+  
 
-        <form className='flex flex-col'>
-            <div className="flex flex-col">
-                <label>Please enter your file_name</label>
-                <input type='text' onChange={e => setName(e.target.value)} value={name} className='form-control border' placeholder='name of the file....' />
-                <label htmlFor="exampleFormControlFile1" className="my-3 mr-2">Browse A File To Upload</label>
-                <input type="file" onChange={e => setFilename(e.target.files[0])} className="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" placeholder='browse files....'/>
-                <div>{errors}</div>
-            </div>
-            <button type="button" onClick={saveFile} className="btn btn-primary float-left mt-2">Submit</button>
-            <br/>
-            <br/>
-            <br/>
-            {/* {status ? <h2>{status}</h2>:(
-                <Segment>
-                <Dimmer active inverted>
-                  <Loader inverted>Loading</Loader>
-                </Dimmer> */}
-          
-                {/* <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' /> */}
-              {/* </Segment>
-            )} */}
-        </form>
-            {(status!="Not yet uploaded any file") && (
-            <div>
-                <div>Press the button for downloading files</div>
-                <button type="button" className="btn btn-primary" onClick={getFiles}>Button</button>
-            </div>
-        
-        )}
 
+<div className="containerxx" style={{ background: "rgb(196 196 196 / 33%)", padding: "4rem", borderRadius: "40px" }}>
+      <h1 style={{color:"#282727d6",fontWeight:"bold"}}>UPLOAD STL FILE HERE TO GET GCODE FILE</h1>
+      <div className="flex justify-between">
+        <div className="w-full md:w-1/2 mr-4">
+          <h2 className="alert" style={{ background: "#7269695c", padding: "1rem", borderRadius: "40px", textAlign: "center",color:"#282727d6",fontWeight:"bold" }}>File Upload Section</h2>
+          <form className='flex flex-col mt-4'>
+            <label className="mb-2" style={{color:"black",fontWeight:"bold"}}>Please enter your file name :</label>
+            <input type='text' onChange={e => setName(e.target.value)} value={name} className='border rounded-lg px-4 py-2 mb-4' placeholder='Name of the file....' />
+            <label htmlFor="exampleFormControlFile1" className="my-3 mr-2" style={{color:"black",fontWeight:"bold"}}>Browse A File To Upload :</label>
+            <input type="file" onChange={e => setFilename(e.target.files[0])} className="border rounded-lg px-4 py-2 mb-4" placeholder='Browse files....' />
+            <div>{errors}</div>
+            <button type="button" onClick={saveFile} className="btn btn-primary">Submit</button>
+          </form>
+          {(status !== "Not yet uploaded any file") && (
+            <div className="mt-6">
+              <div >Press the button for downloading files</div>
+              <button type="button" className="btn btn-primary" style={{background:"green"}} onClick={getFiles}>Button</button>
+            </div>
+          )}
         </div>
 
-
-         <div className="col-md-7">
-
-            <h2 className="alert" style={{background:"#7269695c",padding:"1rem",borderRadius:"40px",textAlign:"center"}}>List of Gcode Files</h2>
-
-            <table className="table table-bordered mt-4">
+        <div className="w-full md:w-1/2">
+          <h2 className="alert" style={{ background: "#7269695c", padding: "1rem", borderRadius: "40px", textAlign: "center",color:"#282727d6",fontWeight:"bold" }}>List of Gcode Files</h2>
+          <table className="table table-bordered mt-4">
             <thead>
-            <tr>
-            <th scope="col">File Title</th>
-            <th scope="col">Download</th>
-            </tr>
+              <tr>
+                <th scope="col">File Title</th>
+                <th scope="col">Download</th>
+              </tr>
             </thead>
             <tbody>
-            {/* <tr>
-                <td></td>
-                <td><a href="" target="_blank"></a> */}
-                
-                {/* <button onClick={()=> forceDownload(index)} className="btn btn-success">DownLoad</button> */}
-                {/* </td>
-            </tr> */}
-            {files.map((file,key) => {
-                        return(
-                            <tr>
-                        <td>{`object_${key}.txt`}</td>
-                        <td><a href="" target="_blank"></a>
-                        
-                        <button onClick={()=> forceDownload(key)} className="btn btn-success">DownLoad</button>
-                        </td>
-                    </tr>
-
-                            
-                        )
-                    })}
-
-             
-
-
-
-
-
-
+              {files.map((file, key) => (
+                <tr key={key}>
+                  <td>{`object_${key}.txt`}</td>
+                  <td>
+                    <button onClick={() => forceDownload(key)} className="btn btn-success">Download</button>
+                  </td>
+                </tr>
+              ))}
             </tbody>
-            </table>
-
-                    </div> 
+          </table>
+        </div>
+      </div>
     </div>
-</div>
 
 </>
 

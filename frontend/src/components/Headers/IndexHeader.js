@@ -34,7 +34,7 @@ function IndexHeader() {
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
+        allowFullScreen
         >
         </iframe>
       </div> 
@@ -46,9 +46,9 @@ function IndexHeader() {
               className="n-logo"
               src={require("assets/img/iiti-logo.jpg")}
             ></img>
-            <h1 className="h1-seo">IIT Indore </h1>
-            <h3>Empower Your Bioprinting Process with Our STL to G-Code Conversion Tool</h3>
-            <h5>##### is free, easy-to-use 3D printing software trusted by millions of users. Fine-tune your 3D model with us for the best slicing and printing results</h5>
+            <h1 className="h1-seo" style={{fontWeight:"bold",color:"white"}}>IIT Indore </h1>
+            <h3 style={{fontWeight:"bold",color:"white"}}>Empower Your Bioprinting Process with Our STL to G-Code Conversion Tool</h3>
+            <h5><span style={{fontWeight:"bold",color:"violet"}}>STL2GCODE_Converter </span> is free, easy-to-use 3D printing software trusted by millions of users. Fine-tune your 3D model with us for the best slicing and printing results</h5>
           </div>
           {/* <h6 className="category category-absolute">
             Designed by{" "}

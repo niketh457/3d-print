@@ -25,7 +25,7 @@ function Examples() {
               <Button
                 className="btn-round"
                 color="default"
-                to="/landing-page"
+                to="/aboutus"
                 outline
                 tag={Link}
               >
@@ -45,11 +45,11 @@ function Examples() {
               <Button
                 className="btn-round"
                 color="default"
-                to="/profile-page"
+                to="/login-page"
                 outline
                 tag={Link}
               >
-                How we work?
+                GetStarted
               </Button>
             </div>
           </Row>

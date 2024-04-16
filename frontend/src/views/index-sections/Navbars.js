@@ -34,7 +34,7 @@ function Navbars() {
                     href="/index"
                 
                   >
-                   <span className="navhead"> GCODE2STL_Converter</span>
+                   <span className="navhead"> STL2GCODE_Converter</span>
                   </NavbarBrand>
                   <button
                     onClick={() => {

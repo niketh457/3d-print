@@ -15,19 +15,19 @@ import './carousel.css'
 
 const items = [
   {
-    src: require("assets/img/3d_image2.jpg"),
-    altText: "A 3D crafted model",
-    caption: "A 3D crafted model"
+    src: require("assets/img/ear.jpg"),
+    // altText: "A 3D crafted ear",
+    caption: "A 3D crafted ear"
   },
   {
-    src: require("assets/img/3d_image1.jpg"),
-    altText: "A 3D crafted model",
-    caption: "A 3D crafted model"
+    src: require("assets/img/hrt.jpg"),
+    // altText: "A 3D crafted heart model",
+    caption: "A 3D crafted heart model"
   },
   {
-    src: require("assets/img/3d_image1.jpg"),
-    altText: "A 3D crafted model",
-    caption: "A 3D crafted model"
+    src: require("assets/img/nose.jpg"),
+    // altText: "A 3D crafted nose model",
+    caption: "A 3D crafted nose model"
   }
 ];
 
@@ -59,7 +59,7 @@ function CarouselSection() {
       <div className="section" id="carousel">
         <Container>
           <div className="title">
-            <h2>Some 3D-Printed Objects using our G-Codes</h2>
+            <h1 style={{color:"gray",fontWeight:"bold"}}> 3D Bioprinting of some tissues</h1>
           </div>
           <Row className="justify-content-center">
             <Col lg="8" md="12">
