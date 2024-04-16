@@ -1,6 +1,15 @@
 import React,{useState,useRef,useEffect} from "react";
+import niketh from "../../assets/img/Niketh.jpeg"
+import pranav from "../../assets/img/Pranav.jpeg"
+import sanjana from "../../assets/img/Sanjana.jpeg"
+import saipavan from "../../assets/img/Sai Pavan.jpeg"
+import havish from "../../assets/img/Havish.jpeg"
+import bioprinting from "../../assets/img/bioprinting.jpeg"
+
 
 import './aboutus.css'
+import DarkFooter from "components/Footers/DarkFooter";
+import Navbars from "views/index-sections/Navbars";
 
 
 function Aboutus(){
@@ -9,26 +18,38 @@ function Aboutus(){
   
   return (
     <>
-  <nav>
+  {/* <nav>
     <div class="nav-content">
       <div class="logo">
         <a href="#">About Us</a>
       </div>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
+        <li><a href="/index">Home</a></li>
+        <li><a href="/aboutus">About Us</a></li>
       </ul>
     </div>
-  </nav>
+  </nav> */}
+  <Navbars/>
 
-<h1>asdjasdlkasjdlkasj</h1>
-<div class="containerxx">
+
+<div class="containerxx bg-gradient-to-r from-blue-500 to-purple-600">
   <div class="section">
       <div class="content">
           <h1>Revolutionizing Bioprinting</h1>
           <h3>A Slicing-Free Approach with STL to G-code Conversion</h3>
       </div>
-      <img src="images/bioprinting.jpeg" alt="Image Description"/>
+      {/* <img src={bioprinting} alt="Image Description"/> */}
+      {/* <div className="containeri">
+      <div className="image-container">
+        <img src={bioprinting} alt="Image Description" className="image" />
+        <div className="border-line"></div>
+      </div>
+     
+    </div> */}
+    <div class="cardam">
+      <img src={bioprinting} alt="Image Description" className="image" />
+
+</div>
   </div>
   <div class="section2">
       <div class="content">
@@ -48,7 +69,7 @@ function Aboutus(){
       <h3>Enter our pioneering solution: a slicing-free approach to bioprinting. By leveraging advanced algorithms and computational techniques, we've developed a method that directly converts STL files – a common format for 3D models – into G-code instructions suitable for bioprinting. This streamlined workflow eliminates the need for slicing, preserving the integrity of complex biological structures and enhancing printing efficiency.</h3>
   </div>
   </div>
-  <h1>asdjasdlkasjdlkasj</h1>
+  
 
   <div class="section2">
     <div class="content">
@@ -100,29 +121,29 @@ function Aboutus(){
 
 <div class="wrapper">
   <i id="left" class="fa-solid fa-angle-left"></i>
-  <ul class="carousel">
-    <li class="card">
-      <div class="img"><img src="images/Niketh.jpeg" alt="img" draggable="false" /></div>
+  <ul class="carousell">
+    <li class="card portcard">
+      <div class="img"><img src={niketh} alt="img" draggable="false" /></div>
       <h2>NIKETH</h2>
       <span>Sales Manager</span>
     </li>
-    <li class="card">
-      <div class="img"><img src="images/Sanjana.jpeg" alt="img" draggable="false" /></div>
+    <li class="card portcard">
+      <div class="img"><img src={sanjana} alt="img" draggable="false" /></div>
       <h2>SANJANA</h2>
       <span>Web Developer</span>
     </li>
-    <li class="card">
-      <div class="img"><img src="images/Pranav.jpeg" alt="img" draggable="false" /></div>
+    <li class="card portcard">
+      <div class="img"><img src={pranav} alt="img" draggable="false" /></div>
       <h2>PRANAV</h2>
       <span>Online Teacher</span>
     </li>
-    <li class="card">
-      <div class="img"><img src="images/Sai Pavan.jpeg" alt="img" draggable="false" /></div>
+    <li class="card portcard">
+      <div class="img"><img src={saipavan} alt="img" draggable="false" /></div>
       <h2>SAI PAVAN</h2>
       <span>Freelancer</span>
     </li>
-    <li class="card">
-      <div class="img"><img src="images/Havish.jpeg" alt="img" draggable="false" /></div>
+    <li class="card portcard">
+      <div class="img"><img src={havish} alt="img" draggable="false" /></div>
       <h2>HAVISH</h2>
       <span>Bank Manager</span>
     </li>
@@ -188,6 +209,7 @@ function Aboutus(){
   </div>
 
 </div>
+<DarkFooter/>
     </>
   );
 }

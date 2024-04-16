@@ -25,7 +25,7 @@ function Download() {
   return (
     <>
       <div
-        className="section section-download"
+        className="section section111 section-download"
         // data-background-color="black"
         id="download-section"
       >
@@ -34,7 +34,7 @@ function Download() {
             <Col className="text-center" lg="8" md="12">
               <h2 className="animate-from-left">Slicing features</h2>
               <h5 className="description animate-from-right">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fringilla urna porttitor rhoncus dolor purus non enim praesent. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo. Facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat. Amet nisl purus in mollis. Fac
+              Our slicing-free approach has the potential to revolutionize the field of bioprinting, unlocking new possibilities for research, innovation, and clinical practice. By streamlining the workflow and preserving biological integrity, we empower researchers, clinicians, and biotechnologists to push the boundaries of what's possible in tissue engineering and regenerative medicine.
               </h5>
             </Col>
           </Row>
@@ -43,9 +43,9 @@ function Download() {
           <br></br>
           <Row className="text-center mt-5">
             <Col className="ml-auto mr-auto" md="8">
-              <h2 className="animate-from-right">Easy to use</h2>
+              <h2 className="animate-from-right">Background</h2>
               <h5 className="description animate-from-left">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fringilla urna porttitor rhoncus dolor purus non enim praesent. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo. Facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat. Amet nisl purus in mollis. Fac
+              Traditional bioprinting typically involves slicing 3D digital models into layers (slices) and then translating these slices into G-code instructions for the bioprinter. While effective, this process often poses limitations in terms of precision, speed, and material integrity. Additionally, slicing can be time-consuming and may compromise the fidelity of delicate biological structures.
               </h5>
             </Col>
           </Row>
@@ -54,9 +54,9 @@ function Download() {
           <br></br>
           <Row className="text-center mt-5">
             <Col className="ml-auto mr-auto" md="8">
-              <h2 className="animate-from-left">Integrated workflow</h2>
+              <h2 className="animate-from-left">Our Innovation</h2>
               <h5 className="description animate-from-right">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fringilla urna porttitor rhoncus dolor purus non enim praesent. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Cursus mattis molestie a iaculis at erat pellentesque adipiscing commodo. Facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat. Amet nisl purus in mollis. Fac
+              Enter our pioneering solution: a slicing-free approach to bioprinting. By leveraging advanced algorithms and computational techniques, we've developed a method that directly converts STL files – a common format for 3D models – into G-code instructions suitable for bioprinting. This streamlined workflow eliminates the need for slicing, preserving the integrity of complex biological structures and enhancing printing efficiency.
               </h5>
             </Col>
           </Row>

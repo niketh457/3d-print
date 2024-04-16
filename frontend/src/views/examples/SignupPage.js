@@ -1,7 +1,9 @@
 import React from "react";
 import axios from "axios"
 import {useNavigate} from "react-router-dom";
-
+import Navbars from "../../views/index-sections/Navbars";
+import iiti from "../../assets/img/iiti-logo.jpg"
+import "./signup.css"
 // reactstrap components
 import {
   Button,
@@ -21,6 +23,7 @@ import {
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import TransparentFooter from "components/Footers/TransparentFooter.js";
+import DarkFooter from "components/Footers/DarkFooter";
 
 function SignUpPage() {
   const navigate = useNavigate();
@@ -67,12 +70,12 @@ function SignUpPage() {
   }, []);
   return (
     <>
-      <ExamplesNavbar />
+      <Navbars />
       <div className="page-header clear-filter" filter-color="blue">
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/login.jpg") + ")"
+            backgroundImage: "url(" + require("assets/img/header1.jpg") + ")"
           }}
         ></div>
         <div className="content">
@@ -84,9 +87,13 @@ function SignUpPage() {
                     <div className="logo-container">
                       <img
                         alt="..."
-                        src={require("assets/img/now-logo.png")}
+                        src={iiti}
+                        
+                        className="logoup"
                       ></img>
                     </div>
+                    <h3 className="headup">Sign-up</h3>
+                    <h6 className="headupp">To get started</h6>
                   </CardHeader>
                   <CardBody>
                     <InputGroup
@@ -170,15 +177,7 @@ function SignUpPage() {
                       Get Started
                     </Button>
                     <div className="pull-left">
-                      <h6>
-                        <a
-                          className="link"
-                          href="/login-page"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          login
-                        </a>
-                      </h6>
+                      
                     </div>
                     <div className="pull-right">
                     </div>
@@ -188,7 +187,7 @@ function SignUpPage() {
             </Col>
           </Container>
         </div>
-        <TransparentFooter />
+        <DarkFooter />
       </div>
     </>
   );

@@ -38,7 +38,7 @@ function NucleoIcons() {
           <Col lg="6" md="12">
             <h2 className="title">Simplify Your Bioprinting Workflow with Our STL to G-Code Converter</h2>
             <h5 className="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Fringilla urna porttitor rhoncus dolor purus non enim praesent. Phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim.
+            Welcome to the forefront of bioprinting innovation! Our story revolves around a groundbreaking approach to bioprinting that challenges traditional methodologies. We've pioneered a revolutionary solution that bypasses slicing altogether, streamlining the process from digital design to tangible reality.
             </h5>
             <Button
               className="btn-round mr-1 btn-lg btn-success"

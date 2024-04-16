@@ -2,6 +2,8 @@ import React, {useState,useEffect} from 'react'
 import axios from 'axios'
 import { Dimmer, Loader, Image, Segment } from 'semantic-ui-react'
 import {saveAs} from 'file-saver'
+import Navbars from 'views/index-sections/Navbars'
+import DarkFooter from 'components/Footers/DarkFooter'
 // import FileSaver from 'file-saver'
 
 
@@ -105,10 +107,13 @@ function UploadFile() {
 
 
 return (
-    <div className="container-fluid">
+    <>
+    <Navbars/>
+    <div className="containerxx" style={{background:"#e9deffb0",padding:"4rem",borderRadius:"40px"}}>
+        <h1>UPLOAD GCODE FILE HERE TO GET STL FILE</h1>
     <div className="col">
         <div className="col">
-            <h2 className="alert alert-success">File Upload Section</h2>
+            <h2 className="alert" style={{background:"#7269695c",padding:"1rem",borderRadius:"40px",textAlign:"center"}}>File Upload Section</h2>
 
         <form className='flex flex-col'>
             <div className="flex flex-col">
@@ -145,8 +150,7 @@ return (
 
          <div className="col-md-7">
 
-
-            <h2 className="alert alert-success">List of Gcode Files</h2>
+            <h2 className="alert" style={{background:"#7269695c",padding:"1rem",borderRadius:"40px",textAlign:"center"}}>List of Gcode Files</h2>
 
             <table className="table table-bordered mt-4">
             <thead>
@@ -190,6 +194,8 @@ return (
                     </div> 
     </div>
 </div>
+
+</>
 
     )
 }

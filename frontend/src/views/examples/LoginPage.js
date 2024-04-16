@@ -1,7 +1,9 @@
 import React from "react";
 import axios from "axios"
 import {useNavigate} from "react-router-dom";
-
+import Navbars from "../../views/index-sections/Navbars";
+import iiti from "../../assets/img/iiti-logo.jpg"
+import "./signup.css"
 // reactstrap components
 import {
   Button,
@@ -21,6 +23,7 @@ import {
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import TransparentFooter from "components/Footers/TransparentFooter.js";
+import DarkFooter from "components/Footers/DarkFooter";
 
 function LoginPage() {
   const navigate = useNavigate();
@@ -70,12 +73,12 @@ function LoginPage() {
   }, []);
   return (
     <>
-      <ExamplesNavbar />
+      <Navbars />
       <div className="page-header clear-filter" filter-color="blue">
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/login.jpg") + ")"
+            backgroundImage: "url(" + require("assets/img/header2.jpg") + ")"
           }}
         ></div>
         <div className="content">
@@ -87,9 +90,11 @@ function LoginPage() {
                     <div className="logo-container">
                       <img
                         alt="..."
-                        src={require("assets/img/now-logo.png")}
+                        src={iiti}
                       ></img>
                     </div>
+                    <h3 className="headup">Login</h3>
+                    <h6 className="headupp">To get started</h6>
                   </CardHeader>
                   <CardBody>
                     <InputGroup
@@ -173,15 +178,6 @@ function LoginPage() {
                       Get Started
                     </Button>
                     <div className="pull-left">
-                      <h6>
-                        <a
-                          className="link"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
-                        >
-                          Create Account
-                        </a>
-                      </h6>
                     </div>
                     <div className="pull-right">
 
@@ -192,7 +188,7 @@ function LoginPage() {
             </Col>
           </Container>
         </div>
-        <TransparentFooter />
+        <DarkFooter />
       </div>
     </>
   );

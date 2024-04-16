@@ -63,7 +63,7 @@ function Index() {
           <Download />
           {/* FEEDBACK COMPONENT HELP US GROW TO BE ADDED */}
         </div>
-        {/* <DarkFooter /> */}
+        <DarkFooter />
       </div>
     </>
   );
