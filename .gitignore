@@ -1,7 +1,2 @@
-venv/
-**/__pycache__/
-**/.vscode/
-**/.DS_Store/
-.vscode
-.DS_Store
+__pycache__
 cube.txt
