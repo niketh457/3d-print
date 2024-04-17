@@ -1,0 +1,17 @@
+POST http://127.0.0.1:8000/gcode/signup 
+Content-Type: application/json
+
+{ "username": "sanjana", "password": "12345", "email": "san@email.com" }
+
+###
+
+POST http://127.0.0.1:8000/gcode/login 
+Content-Type: application/json
+
+{ "username": "sanjana", "email": "san@email.com", "password": "12345" }
+
+###
+
+GET http://127.0.0.1:8000/gcode/gcode 
+Content-Type: application/json 
+Authorization: Token b409be378daaa6b7fad53714c8efb041d398470e
