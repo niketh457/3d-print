@@ -48,7 +48,7 @@ function SignUpPage() {
   const handleSubmit = async(e) => {
     e.preventDefault()
     try{
-     const {data} = await axios.post("http://localhost:8000/gcode/signup",{username:inputs.username,email:inputs.email,password:inputs.password});
+     const {data} = await axios.post("3-d-printing.vercel.app/gcode/signup",{username:inputs.username,email:inputs.email,password:inputs.password});
      console.log(data);
      if(data){
        navigate("/login-page")
